@@ -1,0 +1,22 @@
+.recipe {
+    border-radius: 10px;
+    background-color: #fff0f3;
+    box-shadow: 0px 5px 20px whitesmoke;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 40%;
+}
+
+.images {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.recipe:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
