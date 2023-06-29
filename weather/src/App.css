@@ -77,6 +77,7 @@ main {
 
 .weather-box {
   text-align: center;
+  animation: fadeIn 1s ease-in-out;
 }
 
 .weather-box .temp {
@@ -103,4 +104,16 @@ main {
   font-size: 48px;
   font-weight: 700;
   text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
