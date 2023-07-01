@@ -1,9 +1,12 @@
 import React from "react";
 
-const WrongLetters = () => {
+const WrongLetters = ({wrongLetters}) => {
     return (
-        <div class="wrong-letters-container">
-            <div id="wrong-letters"></div>
+        <div className="wrong-letters-container">
+            <div>
+                {wrongLetters.length > 0 && <p>Wrong</p>}
+                {wrongLetters.map((letter, index) => <span key={index}>${letter}</span>).reduce((previous, current) => previous === null  ? [current] : [previous, ',', current], null)}
+            </div>
         </div>
     )
 }
