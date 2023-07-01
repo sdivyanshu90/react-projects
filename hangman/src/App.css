@@ -1,9 +1,10 @@
 * {
+  color: initial;
   box-sizing: border-box;
 }
 
 body {
-  background-color: #34495e;
+  background-color: #fff9c4;
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
@@ -28,7 +29,7 @@ h1 {
 
 .figure-container {
   fill: transparent;
-  stroke: #fff;
+  stroke: #d56363;
   stroke-width: 4px;
   stroke-linecap: round;
 }
@@ -86,9 +87,9 @@ h1 {
 }
 
 .popup {
-  background: #2980b9;
+  background: #b98729;
   border-radius: 5px;
-  box-shadow: 0 15px 10px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 70px 20px #d9ff00;
   padding: 20px;
   text-align: center;
 }
