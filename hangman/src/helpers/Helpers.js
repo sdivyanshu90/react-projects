@@ -20,3 +20,4 @@ export function checkWin(correct, wrong, word) {
 
     return status;
 }
+

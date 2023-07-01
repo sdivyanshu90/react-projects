@@ -9,7 +9,6 @@ const Word = ({selectedWord, correctLetters}) => {
                 {correctLetters.includes(letter) ? letter : ''}
             </span>
           )
-            
     })}
         </div>
     )

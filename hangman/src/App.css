@@ -80,7 +80,6 @@ h1 {
   bottom: 0;
   left: 0;
   right: 0;
-  /* display: flex; */
   display: none;
   align-items: center;
   justify-content: center;
@@ -127,5 +126,42 @@ h1 {
 
 .notification-container.show {
   transform: translateY(-50px);
+}
+
+/* You're on a roll! Keep guessing! */
+.word .letter:not(.hidden) {
+  background-color: transparent;
+  color: #f1c40f;
+  box-shadow: none;
+}
+
+
+/* Oops, you missed that one! Try again. */
+.wrong-letters-container span {
+  color: #e74c3c;
+  text-shadow: 0 0 3px rgba(231, 76, 60, 0.5);
+}
+
+/* Congrats, you guessed the word correctly! */
+.notification-container.show {
+  background-color: #2ecc71;
+  transform: translateY(0);
+}
+
+.notification-container.show p {
+  color: #fff;
+  font-size: 18px;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.notification-container.show .emoji {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.notification-container.show button {
+  background-color: #fff;
+  color: #2ecc71;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 

@@ -10,9 +10,10 @@ const Popup = ({correctLetters, wrongLetters, selectedWord, setPlayable, playAga
     if ( checkWin(correctLetters, wrongLetters, selectedWord) === 'win' ) {
         finalMessage = 'Congratulations!! You won! 🎉😃';
         playable = false;
+        
     } 
     else if ( checkWin(correctLetters, wrongLetters, selectedWord) === 'lose' ) {
-        finalMessage = 'Better Luck Next Time!!'
+        finalMessage = 'Oops, Better Luck Next Time!!'
         finalMessageRevealWord = `.....The word was: ${selectedWord}`;
         playable = false;
     }
