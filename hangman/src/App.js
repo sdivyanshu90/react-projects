@@ -9,10 +9,8 @@ import {showNotification as show} from './helpers/Helpers'
 
 import './App.css';
 
-
 const words = ['application', 'programming', 'interface', 'wizard'];
 let selectedWord = words[Math.floor(Math.random() * words.length)];
-
 
 function App() {
 
@@ -20,8 +18,6 @@ function App() {
   const [ correctLetters, setCorrectLetters] = useState([]);
   const [ wrongLetters, setWrongLetters] = useState([]);
   const [ showNotification, setShowNotification] = useState(false);
-
-
 
   useEffect(()=>{
     const handleKeyDown = event => {
@@ -40,7 +36,8 @@ function App() {
             if (!wrongLetters.includes(letter)) {
               setWrongLetters(currentLetters => [...currentLetters, letter]);
     
-            } else {
+            } 
+            else {
               show(setShowNotification);
             }
           }
@@ -63,10 +60,9 @@ function App() {
     selectedWord = words[random];
   }
   
-  
 
   return (
-    < >
+    <>
       <Header />
       <div className='game-container'>
         <Figure wrongLetters={wrongLetters}/>
@@ -74,8 +70,8 @@ function App() {
         <Word 
           selectedWord={selectedWord} 
           correctLetters={correctLetters}/>
-        
       </div>
+      
       <Popup 
         correctLetters={correctLetters} 
         wrongLetters={wrongLetters} 
