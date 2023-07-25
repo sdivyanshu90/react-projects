@@ -1,8 +1,9 @@
 # react-projects
 
-This repository contains various projects made using React, and these projects are beginner-friendly.
+This repository contains various projects made using React, which are beginner-friendly.
 It contains projects like:
 - Random Quote/Advice Generator
-- HangMan game
+- Hangman game
 - Simple ToDo
 - Weath-e-React
+- Recipe App
