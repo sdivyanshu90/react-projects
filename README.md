@@ -5,3 +5,4 @@ It contains projects like:
 - Random Quote/Advice Generator
 - HangMan game
 - Simple ToDo
+- Weath-e-React
