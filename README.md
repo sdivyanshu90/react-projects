@@ -7,3 +7,4 @@ It contains projects like:
 - Simple ToDo
 - Weath-e-React
 - Recipe App
+- Quiz App
