@@ -8,3 +8,4 @@ It contains projects like:
 - Weath-e-React
 - Recipe App
 - Quiz App
+- Simple Contact App
